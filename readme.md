@@ -1,5 +1,7 @@
 # Live update HTML file to PDF conversion
 
+Uses grunt watch to watch HTML and CSS files for changes. If a change is detected, phantomjs is used to convert the HTML into a PDF file.
+
 ## Prerequisites
 
 Install
