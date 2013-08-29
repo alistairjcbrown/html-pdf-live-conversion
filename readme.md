@@ -15,14 +15,20 @@ Install
 ## Getting started
 
  * Clone the repository
-  `git clone <repository>`
+  `git clone git@github.com:alistairjcbrown/html-pdf-live-conversion.git`
+
+ * `cd html-pdf-live-conversion`
 
  * Intall dependencies
    `npm install`
 
- * If required, edit the watch path in `Gruntfile.js`. By default it will watch any HTML or CSS file in the directory above.
+ * Now, `grunt watch`
 
- __Notes:__ The last updated HTML file is converted to PDF when a CSS file is changed. The PDF file will be created in the same directory as the HTML file.
+__Notes:__ 
+
+If required, edit the watch path in `Gruntfile.js`. By default it will watch any HTML or CSS file in the directory above.
+
+The last updated HTML file is converted to PDF when a CSS file is changed. The PDF file will be created in the same directory as the HTML file.
 
 ## Advanced
 
