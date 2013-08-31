@@ -15,6 +15,6 @@
 
     if (last_modified_elements.length !== 0) {
         generated_date = year + '-' + month + '-' + day + ' ' + hour + ':' + minute;
-        last_modified_elements[0].innerHTML = "Generated from source on " + generated_date;
+        last_modified_elements[0].innerHTML = "Document generated at " + generated_date;
     }
 })();

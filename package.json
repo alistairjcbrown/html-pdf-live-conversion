@@ -2,8 +2,9 @@
     "name": "html-pdf-conversion",
     "version": "1.0.0",
     "private": true,
-    "devDependencies": {
+    "dependencies": {
         "grunt": "latest",
-        "grunt-contrib-watch": "latest"
+        "grunt-contrib-watch": "latest",
+        "qrcode-npm": "latest"
     }
 }
