@@ -4,7 +4,6 @@
     "private": true,
     "dependencies": {
         "grunt": "latest",
-        "grunt-contrib-watch": "latest",
-        "qrcode-npm": "latest"
+        "grunt-contrib-watch": "latest"
     }
 }

@@ -9,7 +9,9 @@ var page = require('webpage').create(),
     system = require('system'),
     address, output, size,
     in_page_scripts = [
-        'scripts/generated-date.js'
+        'scripts/generated-date.js',
+        'scripts/generate-qr-code/qrcode.js',
+        'scripts/generate-qr-code/index.js'
     ],
     paper_size,
     body_margin;
