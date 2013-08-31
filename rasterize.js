@@ -2,7 +2,7 @@
  * Slightly modified version found at: https://github.com/ariya/phantomjs/blob/master/examples/rasterize.js
  * Modifcations:
  *  - Added in page scripts to be listed at the top and injected when the page is opened.
- *  - Use of the page boady margin to affect the page margin 
+ *  - Use of the page body margin to set the page margin
  */
 
 var page = require('webpage').create(),
@@ -11,7 +11,8 @@ var page = require('webpage').create(),
     in_page_scripts = [
         'scripts/generated-date.js',
         'scripts/generate-qr-code/qrcode.js',
-        'scripts/generate-qr-code/index.js'
+        'scripts/generate-qr-code/index.js',
+        'scripts/generate-references.js'
     ],
     paper_size,
     body_margin;
