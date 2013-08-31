@@ -28,7 +28,7 @@ Install
 
  * Now, `grunt watch`
 
-### Notes: 
+### Notes:
 
 If required, edit the watch path in `Gruntfile.js`. By default it will watch any HTML or CSS file in the directory above.
 
@@ -44,3 +44,4 @@ Create your JS file in the `scripts` directory and add the path to the `in_page_
 
  * Generated date script will add text with the format "Document generated at YYY-MM-DD HH:MM" to the first element with class `generated-on`.
  * Generate QR code script will read the value from the first element with class `qr-code-value`, generate a QR code and insert the QR code image into the first element with class `qr-code`.
+ * Generate reference script will create a list of references in the first element with class `footnote-references` by checking the document for `span` elements with the attribute `data-type` with value `reference`.
