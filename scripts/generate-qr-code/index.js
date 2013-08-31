@@ -1,13 +1,13 @@
 /*
- * Looks for an element with class "qr-code-value" and uses text data to create QR code
- * Puts QR code in element with class "qr-code"
+ * Looks for the first element with class "qr-code-value" and uses element text to create QR code.
+ * Puts QR code in the first element with class "qr-code".
  */
 (function() {
 
-    var qr_code_value = document.querySelectorAll(".qr-code-value")[0],
-        qr_code_location = document.querySelectorAll(".qr-code")[0];
+    var qr_code_value    = document.querySelector(".qr-code-value"),
+        qr_code_location = document.querySelector(".qr-code");
 
-    if (typeof qr_code_value === "undefined" || typeof qr_code_location === "undefined") {
+    if (qr_code_value === null || qr_code_location === null) {
         return false;
     }
 
@@ -22,5 +22,7 @@
             correctLevel : QRCode.CorrectLevel.M
         }
     );
+
+    return true;
 
 })();
