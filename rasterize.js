@@ -47,13 +47,18 @@ page.open(address, function (status) {
     });
 
     body_margin = page.evaluate(function () {
-        var body_style = window.getComputedStyle(document.getElementsByTagName('body')[0]);
-        return {
-            top:    body_style.getPropertyValue('margin-top'),
-            right:  body_style.getPropertyValue('margin-right'),
-            bottom: body_style.getPropertyValue('margin-bottom'),
-            left:   body_style.getPropertyValue('margin-left'),
-        };
+        var body_element = document.getElementsByTagName('body')[0],
+            body_style = window.getComputedStyle(body_element),
+            body_margin =  {
+                top:    body_style.getPropertyValue('margin-top'),
+                right:  body_style.getPropertyValue('margin-right'),
+                bottom: body_style.getPropertyValue('margin-bottom'),
+                left:   body_style.getPropertyValue('margin-left'),
+            };
+
+        body_element.style.margin = 0;
+
+        return body_margin;
     });
 
     Object.keys(body_margin).forEach(function(margin_location) {
