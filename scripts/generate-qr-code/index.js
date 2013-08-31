@@ -14,12 +14,12 @@
     new QRCode(
         qr_code_location,
         {
-            text: qr_code_value.textContent,
+            text: qr_code_value.textContent.trim(),
             width: 64,
             height: 64,
             colorDark : "#000000",
             colorLight : "#ffffff",
-            correctLevel : QRCode.CorrectLevel.H
+            correctLevel : QRCode.CorrectLevel.M
         }
     );
 
