@@ -2,6 +2,8 @@
 
 Uses grunt watch to watch HTML and CSS files for changes. If a change is detected, phantomjs is used to convert the HTML into a PDF file.
 
+Instructions below are aimed at linux. This has only been tested on Ubuntu. YMMV.
+
 ## Prerequisites
 
 Install
@@ -26,7 +28,7 @@ Install
 
  * Now, `grunt watch`
 
-__Notes:__ 
+### Notes: 
 
 If required, edit the watch path in `Gruntfile.js`. By default it will watch any HTML or CSS file in the directory above.
 
@@ -38,4 +40,7 @@ You can create a script to modify the HTML page before conversion.
 
 Create your JS file in the `scripts` directory and add the path to the `in_page_scripts` array in `rasterize.js`. This will be injected into the page before it is converted.
 
-I have created a script which will add a "Generated on" message in an element with class "generated-on". 
+### Existing sctipts:
+
+ * Generated date script will add text with the format "Document generated at YYY-MM-DD HH:MM" to the first element with class `generated-on`.
+ * Generate QR code script will read the value from the first element with class `qr-code-value`, generate a QR code and insert the QR code image into the first element with class `qr-code`.
