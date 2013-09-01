@@ -15,11 +15,11 @@
         qr_code_location,
         {
             text: qr_code_value.textContent.trim(),
-            width: 48,
-            height: 48,
+            width: 64,
+            height: 64,
             colorDark : "#000000",
             colorLight : "#ffffff",
-            correctLevel : QRCode.CorrectLevel.M
+            correctLevel : QRCode.CorrectLevel.L
         }
     );
 

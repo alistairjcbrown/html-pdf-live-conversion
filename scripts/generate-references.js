@@ -23,7 +23,7 @@
         }
 
         if (reference_title !== null && reference_href !== null) {
-            reference_text += "[ ";
+            reference_text += " [ ";
         }
 
         if (reference_href !== null) {
@@ -48,7 +48,7 @@
     if (reference_footnote !== null) {
         reference_list_text += "<ul>";
         references.forEach(function(reference, index) {
-            reference_list_text += "<li>[" + (index+1) + "] - " + reference + "</li>";
+            reference_list_text += "<li class=\"footnote-reference-"+(index+1)+"\">[" + (index+1) + "] - " + reference + "</li>";
         });
         reference_list_text += "</ul>";
 
