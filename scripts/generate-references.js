@@ -23,7 +23,7 @@
         }
 
         if (reference_title !== null && reference_href !== null) {
-            reference_text += " [ ";
+            reference_text += "[ ";
         }
 
         if (reference_href !== null) {
@@ -38,9 +38,10 @@
             references.push(reference_text);
             reference_point_size = parseInt(window.getComputedStyle(reference_point).getPropertyValue("font-size"));
             if (isNaN(reference_point_size) || reference_point_size < 16) {
-                sup_open = sup_close = "";
+                sup_open = " ";
+                sup_close = "";
             }
-            reference_point.innerHTML = reference_point.innerHTML + sup_open + "[" + references.length + "]" + sup_close;
+            reference_point.innerHTML = reference_point.innerHTML.trim() + sup_open + "[" + references.length + "]" + sup_close;
         }
     });
 

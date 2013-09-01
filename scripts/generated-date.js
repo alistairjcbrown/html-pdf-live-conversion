@@ -12,7 +12,7 @@
         hour   = ('0' + date.getHours()).slice(-2),
         minute = ('0' + date.getMinutes()).slice(-2),
         generated_date = year + '-' + month + '-' + day + ' ' + hour + ':' + minute,
-        reference_span_open  = "<span data-type=\"reference\" data-href=\"http://git.io/GJwn1g\" data-title=\"Github /alistairjcbrown: HTML to PDF live conversion\">",
+        reference_span_open  = "<span data-type=\"reference\" data-href=\"git.io/GJwn1g\" data-title=\"Github /alistairjcbrown: HTML to PDF live conversion\">",
         reference_span_close = " </span>";
 
     if (last_modified_elements === null) {
